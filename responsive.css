@@ -1,0 +1,432 @@
+/*---------------------------------------------------- 
+Screen - 768px
+----------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  nav .hamburger {
+    display: inline-block;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .nav_op {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.192);
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .nav_right ul {
+    z-index: 9999;
+    position: absolute;
+    background-color: white;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    top: 0;
+    right: -200%;
+    width: 16rem;
+    height: 100vh;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .toggle {
+    right: 0 !important;
+  }
+  nav li a {
+    padding: 0 3rem;
+  }
+  nav ul i {
+    -ms-grid-column-align: end;
+        justify-self: end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    padding: 1rem;
+    margin-right: 1rem;
+  }
+  .nft_top,
+  .history_content,
+  .woof_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .team_members {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .love_dog,
+  .sorrow_dog,
+  .lock_pin,
+  .text_second .logo_dog,
+  .con_with_banner {
+    display: none;
+  }
+  .social_icons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+  .gen2_bottom p {
+    width: 100%;
+  }
+  .team_top {
+    position: relative;
+  }
+  .team_top .butter_red img {
+    display: block;
+    position: absolute;
+    right: -2rem;
+    top: -3rem;
+  }
+  .text_third {
+    position: relative;
+  }
+  .text_third .logo_dog img {
+    display: block;
+    position: absolute;
+    width: 5rem;
+    right: -8rem;
+    top: -2rem;
+  }
+}
+
+/*---------------------------------------------------- 
+Screen - 640px
+----------------------------------------------------*/
+@media screen and (max-width: 640px) {
+  .lg {
+    display: none;
+  }
+  .sm {
+    display: block;
+  }
+  section {
+    overflow: visible;
+  }
+  .benji {
+    left: 2.2rem;
+  }
+  .benji img {
+    width: 22rem;
+  }
+  .bee img {
+    left: 7rem;
+    bottom: 20rem;
+  }
+  .hero_dog img {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .butterfly {
+    right: -5rem;
+    top: 0;
+  }
+  .butter_yellow img {
+    width: 4rem;
+  }
+  .butter_red img {
+    width: 3.2rem;
+  }
+  .social_icons img {
+    width: 3.5rem;
+  }
+  .main {
+    background-image: url(images/main/main_bg_mbl.png);
+  }
+  .grass_sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .grass_lg {
+    display: none;
+  }
+  .nft {
+    position: relative;
+    padding-bottom: 12rem;
+  }
+  .nft_content {
+    margin-top: -8rem;
+  }
+  .nft_text h3 {
+    text-shadow: 4px 3px 11px rgba(0, 0, 0, 0.342);
+  }
+  .loves {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  .loves .yellow_love_sm {
+    position: absolute;
+    top: 2rem;
+  }
+  .loves .yellow_love_sm img {
+    width: 2rem;
+  }
+  .loves .red_love_sm {
+    position: absolute;
+  }
+  .loves .red_love_sm img {
+    width: 1.5rem;
+  }
+  .nft_right {
+    margin-top: 2rem;
+  }
+  .nft_right .bone img {
+    max-width: 8rem;
+    left: -3rem;
+    bottom: -1.2rem;
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+    width: 100%;
+  }
+  .bottom_text_sm {
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 90%;
+  }
+  .nft .cam_dog_sm img {
+    position: absolute;
+    width: 11.5rem;
+    right: -1rem;
+    bottom: 3rem;
+    -webkit-transform: rotate(13deg) scale(-1, 1);
+            transform: rotate(13deg) scale(-1, 1);
+  }
+  .nft_bottom {
+    position: static;
+  }
+  .history {
+    padding: 5rem 0;
+    background-image: url(images/history/history_bg_mbl.png);
+  }
+  .frame_sm img {
+    position: absolute;
+    bottom: -1rem;
+    right: -6rem;
+    width: 6rem;
+    -webkit-transform: rotate(-25deg);
+            transform: rotate(-25deg);
+  }
+  .history_content {
+    gap: 1rem;
+  }
+  .frame_dog img {
+    max-width: 17rem;
+    width: 100%;
+  }
+  .flower_gif_sm img {
+    position: absolute;
+    left: -2rem;
+    top: -4rem;
+    width: 4.5rem;
+  }
+  .utility .thum_img {
+    display: none;
+  }
+  .thum_text p,
+  .thum_text span {
+    font-size: 1.3rem;
+  }
+  .gen2_top_text .scretch_img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main .social_icons {
+    display: none;
+  }
+  .main .benji_logo img {
+    width: 22rem;
+  }
+  .main .bee img {
+    width: 2.5rem;
+    left: 4rem;
+    bottom: 20rem;
+  }
+  ul .extra_sm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1rem;
+    margin-left: 3rem;
+  }
+  ul .extra_sm img {
+    width: 3rem;
+  }
+  .nft .cam_dog_sm img {
+    bottom: 2rem;
+  }
+  .nft .bone img {
+    max-width: 6rem;
+    left: -2rem;
+    bottom: -1.2rem;
+  }
+  .utility_top h2 {
+    font-size: 1.9rem;
+  }
+  .flower_gif_sm img {
+    left: -1rem;
+    top: -4rem;
+    width: 3.5rem;
+  }
+  .gen2_content p {
+    font-size: 1.5rem;
+  }
+  .gen2_top_text p {
+    max-width: 100%;
+  }
+  .logo_dog {
+    display: none;
+  }
+}
+
+/*---------------------------------------------------- 
+Screen - 460px
+----------------------------------------------------*/
+@media screen and (max-width: 460px) {
+  .nav {
+    padding: 0;
+  }
+  .main {
+    height: 450px;
+  }
+  .main .hero_dog img {
+    width: 10rem;
+  }
+  .main .benji_logo img {
+    width: 18rem;
+  }
+  .main .bee img {
+    bottom: 12rem;
+    width: 2.2rem;
+  }
+  .main .butter_yellow img {
+    width: 3.5rem;
+  }
+  .main .butter_red img {
+    width: 2.8rem;
+  }
+  .main .butterfly {
+    right: -3.7rem;
+  }
+  .nft .text_header h3 {
+    font-size: 1.9rem;
+  }
+  .team {
+    text-align: center;
+  }
+  .team .member {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .team .team_members .member:nth-child(even) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: center;
+  }
+  .utility_top h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+/*---------------------------------------------------- 
+Screen - 400px
+----------------------------------------------------*/
+@media screen and (max-width: 400px) {
+  .team_top h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main .hero_dog img {
+    width: 9rem;
+  }
+  .main .benji_logo img {
+    width: 16.5rem;
+  }
+  .main .bee img {
+    left: 1rem;
+  }
+  .main .butterfly {
+    top: 4.5rem;
+    right: -2rem;
+  }
+  .main .butter_yellow img {
+    width: 3rem;
+  }
+  .main .butter_red img {
+    width: 2.3rem;
+  }
+  .nft .text_header h3 {
+    font-size: 1.5rem;
+  }
+  .nft p {
+    font-size: 1.3rem;
+  }
+  .nft .bottom_text_sm h2 {
+    font-size: 1.3rem;
+  }
+  .gen2_content p,
+  .gen2_content span {
+    font-size: 1.4rem;
+  }
+  .utility_top h2 {
+    font-size: 1.56rem;
+  }
+  .utility_content p,
+  .utility_content span {
+    font-size: 1.3rem;
+  }
+}
+
+/*---------------------------------------------------- 
+Screen - 300px
+----------------------------------------------------*/
+@media screen and (max-width: 300px) {
+  .main {
+    height: 350px;
+  }
+  .main .hero_dog img {
+    width: 8rem;
+  }
+  .main .benji_logo img {
+    width: 14rem;
+  }
+  .main .bee img {
+    left: 1rem;
+    bottom: 10rem;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
