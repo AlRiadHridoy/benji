@@ -1,6 +1,40 @@
 @media screen and (max-width: 1280px) {
 }
 @media screen and (max-width: 1024px) {
+  .nft_right .bone img {
+    width: 8.3rem;
+    right: -3rem;
+    bottom: -2.6rem;
+  }
+  .gen2 {
+    text-align: center;
+    p {
+      max-width: calc(100% - 5rem);
+      margin: 0 auto;
+    }
+  }
+
+  .dog_banner {
+    img {
+      width: 6rem;
+    }
+  }
+
+    .team_members {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .history {
+    padding-top: 3.5rem;
+    padding-bottom: 6rem;
+
+    .frame img {
+      top: -1rem;
+      left: -4rem;
+      width: 4.5rem;
+    }
+  }
 }
 
 /*---------------------------------------------------- 
@@ -12,17 +46,8 @@ Screen - 768px
     font-size: 1.8rem;
     cursor: pointer;
   }
-
-  .nav_op {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.192);
-    transition: 0.5s ease-in-out;
+  .overly.bg {
+    display: block;
   }
 
   .nav_right ul {
@@ -60,15 +85,10 @@ Screen - 768px
     flex-direction: column;
   }
 
-  .team_members {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
+
   .love_dog,
   .sorrow_dog,
-  .lock_pin,
-  .text_second .logo_dog,
-  .con_with_banner {
+  .lock_pin {
     display: none;
   }
 
@@ -80,26 +100,41 @@ Screen - 768px
     width: 100%;
   }
 
+  .team {
+    padding: 3rem 0;
+  }
   .team_top {
     position: relative;
-
     .butter_red img {
       display: block;
       position: absolute;
       right: -2rem;
-      top: -3rem;
+      top: -2.8rem;
+      width: 3rem;
     }
   }
 
-  .text_third {
-    position: relative;
-    .logo_dog img {
-      display: block;
-      position: absolute;
-      width: 5rem;
-      right: -8rem;
-      top: -2rem;
-    }
+  .team_members {
+    margin-top: 2rem;
+  }
+
+  .thum_text .text_second .logo_dog img {
+    right: -2rem;
+    top: 3rem;
+    width: 5rem;
+  }
+
+  .nft_right .bone img {
+    width: 8.3rem;
+    right: -3rem;
+    bottom: -2.5rem;
+    transform: rotate(-5deg);
+  }
+
+  .nft_bottom .cam_dog img {
+    width: 8.5rem;
+    left: 0;
+    bottom: 4.4rem;
   }
 }
 
@@ -112,9 +147,9 @@ Screen - 640px
   }
 
   .sm {
-    display: block;
+    display: inline-block;
   }
-  section {
+  .nft {
     overflow: visible;
   }
 
@@ -202,12 +237,13 @@ Screen - 640px
     .bone img {
       max-width: 8rem;
       left: -3rem;
-      bottom: -1.2rem;
+      bottom: -2.2rem;
       transform: rotate(40deg);
       width: 100%;
     }
   }
   .bottom_text_sm {
+    position: relative;
     margin: 0 auto;
     margin-top: 3rem;
     width: 90%;
@@ -215,10 +251,10 @@ Screen - 640px
 
   .nft .cam_dog_sm img {
     position: absolute;
-    width: 11.5rem;
-    right: -1rem;
+    width: 9rem;
+    right: 1rem;
     bottom: 3rem;
-    transform: rotate(13deg) scale(-1, 1);
+    transform: scale(-1, 1);
   }
 
   .nft_bottom {
@@ -227,16 +263,24 @@ Screen - 640px
 
   // history
   .history {
-    padding: 5rem 0;
+    padding: 3.5rem 0;
     background-image: url(images/history/history_bg_mbl.png);
+  }
+
+  .history {
+    .frame img {
+      top: -1rem;
+      left: -5rem;
+      width: 5rem;
+    }
   }
 
   .frame_sm {
     img {
       position: absolute;
       bottom: -1rem;
-      right: -6rem;
-      width: 6rem;
+      right: -5rem;
+      width: 5rem;
       transform: rotate(-25deg);
     }
   }
@@ -267,8 +311,19 @@ Screen - 640px
     font-size: 1.3rem;
   }
 
-  .gen2_top_text .scretch_img {
-    display: none;
+  .gen2 {
+    p {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .banners {
+      display: none;
+    }
+
+    .gen2_content {
+      padding: 0 1rem;
+    }
   }
 }
 
@@ -331,8 +386,12 @@ Screen - 640px
   .gen2_top_text p {
     max-width: 100%;
   }
-  .logo_dog {
+  .thum_text .text_second .logo_dog {
     display: none;
+  }
+
+  .history {
+    padding-bottom: 2.5rem;
   }
 }
 
@@ -340,7 +399,6 @@ Screen - 640px
 Screen - 460px
 ----------------------------------------------------*/
 @media screen and (max-width: 460px) {
-
   .nav {
     padding: 0;
   }
@@ -385,7 +443,7 @@ Screen - 460px
     }
 
     text-align: center;
-    .team_members .member:nth-child(even) {
+    .team_members .member {
       flex-flow: column;
       text-align: center;
     }
@@ -397,16 +455,52 @@ Screen - 460px
       font-size: 1.5rem;
     }
   }
+
+  .history_left .frame img {
+    left: -4rem;
+  }
+  .history_left img {
+    right: -4rem;
+  }
+
+  .history_left .frame img,
+  .frame_sm img {
+    width: 4.5rem;
+  }
 }
 /*---------------------------------------------------- 
 Screen - 400px
 ----------------------------------------------------*/
-
 @media screen and (max-width: 400px) {
   .team_top {
     h2 {
       font-size: 1.5rem;
     }
+  }
+  .team {
+    padding: 2.5rem 0;
+  }
+
+  .history {
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  .history_left .frame img {
+    left: -3rem;
+    top: 0.7rem;
+    transform: rotate(-30deg);
+  }
+  .history_left img {
+    right: -2rem;
+  }
+
+  .history_left .frame img,
+  .frame_sm img {
+    width: 3.2rem;
+  }
+
+  .history_right p {
+    margin-top: 0;
   }
 }
 
@@ -447,10 +541,21 @@ Screen - 400px
     }
 
     .bottom_text_sm {
+      position: relative;
       h2 {
         font-size: 1.3rem;
       }
     }
+
+    .nft_content {
+      margin-top: -7.42rem;
+    }
+  }
+
+  .flower_gif_sm img {
+    left: -1rem;
+    top: -2rem;
+    width: 2.5rem;
   }
 
   .gen2_content p,
@@ -469,6 +574,11 @@ Screen - 400px
     span {
       font-size: 1.3rem;
     }
+  }
+
+  .history_left .frame img {
+    left: -2.2rem;
+    transform: rotate(-30deg);
   }
 }
 
@@ -489,5 +599,11 @@ Screen - 300px
       left: 1rem;
       bottom: 10rem;
     }
+  }
+
+  .nft .bone img {
+    max-width: 4rem;
+    left: -1rem;
+    bottom: -0.5rem;
   }
 }
